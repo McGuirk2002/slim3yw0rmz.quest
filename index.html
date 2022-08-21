@@ -18,13 +18,42 @@
 	<br>
 	
 	<!-- Scrolling Header Text -->
-	<marquee behavior="scroll" direction="left" scrollamount="15">
-	<p style="line-height= 30px; border= 3px black;"> 
-	this webpage is currently under construction&nbsp;&nbsp;!&nbsp;&nbsp;&nbsp;please visit again soon&nbsp;&nbsp;!!
-	</p>
-	</marquee>
-	
-	<br>
+	<style>
+.scroll-left {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ background: yellow;
+ color: orange;
+ border: 1px solid orange;
+}
+.scroll-left p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ transform:translateX(100%);
+ /* Apply animation to this element */
+ animation: scroll-left 15s linear infinite;
+}
+/* Move it (define the animation) */
+@keyframes scroll-left {
+ 0%   {
+ transform: translateX(100%); 		
+ }
+ 100% {
+ transform: translateX(-100%); 
+ }
+}
+</style>
+
+<div class="scroll-left">
+<p>Scroll left... </p>
+</div>
+<br>
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PLJhRNoCe4E16meaLDn0fuILCPCyvGdJRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	<img src="images/patreon_test.jpg" alt="test advertisement" width="280" height="200" align="top">
 	<br>
