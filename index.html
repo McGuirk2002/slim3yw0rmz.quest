@@ -19,41 +19,31 @@
 	
 	<!-- Scrolling Header Text -->
 	<style>
-.scroll-left {
- height: 50px;	
- overflow: hidden;
- position: relative;
- background: yellow;
- color: orange;
- border: 1px solid orange;
-}
-.scroll-left p {
- position: absolute;
- width: 100%;
- height: 100%;
- margin: 0;
- line-height: 50px;
- text-align: center;
- /* Starting position */
- transform:translateX(100%);
- /* Apply animation to this element */
- animation: scroll-left 15s linear infinite;
-}
-/* Move it (define the animation) */
-@keyframes scroll-left {
- 0%   {
- transform: translateX(100%); 		
- }
- 100% {
- transform: translateX(-100%); 
- }
-}
-</style>
+	.scroll-left {
+	height: 50px;	
+	overflow: hidden;
+	position: relative;
+	background: black;
+	color: #e8dbe9;
+	}
+	.scroll-left p {
+	position: absolute; width: 100%; height: 100%; margin: 0; line-height: 50px; text-align: center; transform:translateX(100%); animation: scroll-left 15s linear infinite;
+	}
+	@keyframes scroll-left {
+	0%   {
+	transform: translateX(100%); 		
+	}
+	100% {
+	transform: translateX(-100%); 
+	}
+	}
+	</style>
 
-<div class="scroll-left">
-<p>Scroll left... </p>
-</div>
-<br>
+	<div class="scroll-left">
+	<p>this webpage is currently under construction, come again soon for wacky and insane content !! </p>
+	</div>
+
+	<br>
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PLJhRNoCe4E16meaLDn0fuILCPCyvGdJRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	<img src="images/patreon_test.jpg" alt="test advertisement" width="280" height="200" align="top">
 	<br>
