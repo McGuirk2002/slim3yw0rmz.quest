@@ -14,8 +14,27 @@
 			</style>
 	</head>
 	<body>
-		<div id="top" style="left:20px; top= 485px; position: absolute"><img src="images/header/home_header.png" alt="Homepage Header" width="1000" height="203">
-		<div id="top" style="left:20px; top= 20px; position: absolute"><img src="images/header/header_logo.gif" alt="Website Logo">
+		<div class="parent">
+			<img class="image1" src="images/header/home_header.png" alt="Homepage Header" width="1000" height="203"/>
+			<img class="image2" src="images/header/header_logo.gif" alt="Website Logo"/>
+			</div>
+			
+		.parent {
+			position: relative;
+			top: 0;
+			left: 0;
+			}
+			
+		.image1 {
+			position: relative;
+			top: 0;
+			left: 0;
+			}
+		.image2 {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			}
 		<!-- Scrolling Header Text -->
 		<marquee behavior="scroll" direction="left" scrollamount="15">
 		<p style="line-height= 30px; background: black;"> 
